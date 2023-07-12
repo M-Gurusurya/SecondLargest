@@ -6,6 +6,7 @@ public class SecondLargest {
         int size=scanner.nextInt();
         int array[]=new int[size];
         int max=Integer.MIN_VALUE;
+        //getting array inputs
         for(int i=0;i<size;i++)
         {
             array[i]=scanner.nextInt();
@@ -16,6 +17,7 @@ public class SecondLargest {
         }
         System.out.println(findSecondLargest(array,max));
     }
+
     public static int findSecondLargest(int array[],int max)
     {
         int size=array.length;
@@ -32,6 +34,7 @@ public class SecondLargest {
                 }
             }
         }
+        //find second largest
         for (int k=size-2;k>=0;k--)
         {
             if(array[k]!=max)
